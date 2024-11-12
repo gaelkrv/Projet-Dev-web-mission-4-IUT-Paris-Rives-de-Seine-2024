@@ -132,17 +132,25 @@ nav a:hover, .contenu_menu a:hover {
 .bilan_rapport .paragraphe_1{
     position: relative;
     padding-right: 500px;
-    margin : 50px 0 0 25px
+    margin : 50px 0 0 25px;
+    border : 5px solid blue;
 }
 
 .bilan_rapport .paragraphe_2{
     position: relative;
     padding-left: 370px;
-    margin : 100px 0 200px 0;
+    margin : 100px 0 100px 0;
+    border : 5px solid green;
 }
 
 .bilan_rapport .paragraphe_3{
+    margin : 0 100px 130px 100px;
+    border : 5px solid orange;
+}
+
+.bilan_rapport .paragraphe_4{
     margin : 0 100px 0px 100px;
+    border : 5px solid red;
 }
 
 .bilan_rapport .couple_image {
@@ -157,7 +165,7 @@ nav a:hover, .contenu_menu a:hover {
     width: 290px;
     height: 174px;
     position: absolute;
-    top: 380px;
+    top: 420px;
     right: 20px;
 }
 
@@ -165,7 +173,7 @@ nav a:hover, .contenu_menu a:hover {
     width: 290px;
     height: 300px;
     position: absolute;
-    top: 900px;
+    top: 810px;
     right : 1450px;
 }
 

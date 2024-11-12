@@ -119,14 +119,86 @@ nav a:hover, .contenu_menu a:hover {
     font-family : "Agency FB";
     text-decoration: underline;
     text-align : center;
-    font-size : 50px;
+    font-size : 70px;
     margin : 100px 0 0 0px;
 }
 
 .bilan_rapport p{
     font-family : Consolas;
     font-size : 25px;
-    margin : 50px 0 0px 25px;
+    margin : 50px 0 0 25px;
+}
+
+.bilan_rapport .paragraphe_1{
+    position: relative;
+    padding-right: 500px;
+    margin : 50px 0 0 25px
+}
+
+.bilan_rapport .paragraphe_2{
+    position: relative;
+    padding-left: 370px;
+    margin : 100px 0 200px 0;
+}
+
+.bilan_rapport .paragraphe_3{
+    margin : 0 100px 0px 100px;
+}
+
+.bilan_rapport .couple_image {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    width: 350px;
+    height: 352px;
+}
+
+.couple_image img:first-child{
+    width: 290px;
+    height: 174px;
+    position: absolute;
+    top: 380px;
+    right: 20px;
+}
+
+.couple_image img:last-child{
+    width: 290px;
+    height: 300px;
+    position: absolute;
+    top: 900px;
+    right : 1450px;
+}
+
+.bilan_rapport caption{
+    font-family : "Agency FB";
+    text-decoration: underline;
+    text-align : center;
+    font-size : 70px;
+    margin : 100px 0 70px 0;
+}
+
+.bilan_rapport th{
+    font-family : "Agency FB";
+    color : red;
+    font-size : 50px;
+    text-align : center;
+}
+
+.bilan_rapport td{
+    font-size : 30px;
+    word-break: break-all;
+}
+th,td{
+    border : 2px solid black;
+    background-color: darkseagreen;
+    border-radius : 10px;
+}
+th,td{
+    padding: 30px;
+}
+.bilan_rapport table{
+    width : 70%;
+    margin : 100px 0px 300px 300px;
 }
 /*************************FIN de Bilan de rapport**************************/
 

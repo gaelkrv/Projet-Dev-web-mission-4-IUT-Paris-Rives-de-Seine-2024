@@ -120,7 +120,7 @@ nav a:hover, .contenu_menu a:hover {
     text-decoration: underline;
     text-align : center;
     font-size : 70px;
-    margin : 100px 0 0 0px;
+    margin : 100px 0 0 0;
 }
 
 .bilan_rapport p{
@@ -206,7 +206,7 @@ th,td{
 }
 .bilan_rapport table{
     width : 70%;
-    margin : 100px 0px 300px 300px;
+    margin : 100px 0 300px 300px;
 }
 /*************************FIN de Bilan de rapport**************************/
 

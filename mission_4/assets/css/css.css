@@ -114,6 +114,31 @@ nav a:hover, .contenu_menu a:hover {
 }
 /*************************FIN de Introduction du travail*******************/
 
+
+/*************************DEBUT de la page "Travail sur KDou"************************/
+
+/*************************FIN de la page "Travail sur KDou"**************************/
+
+/***************DEBUT de Mission 3***************/
+.mission3 h1 { /* Style de base de la page web pour le titre*/
+    font-family : "Agency FB";
+    text-decoration: underline;
+    text-align : center;
+    font-size : 70px;
+    margin : 100px 0 0 0;
+}
+
+.mission3 .mission3_intro{
+	position: relative;
+    padding-right: 500px;
+    margin : 50px 0 0 25px;
+    border : 5px solid blue;
+	
+}
+
+/***************FIN de Mission 3***************/
+
+
 /*************************DEBUT de Bilan de rapport************************/
 .bilan_rapport h1 {
     font-family : "Agency FB";

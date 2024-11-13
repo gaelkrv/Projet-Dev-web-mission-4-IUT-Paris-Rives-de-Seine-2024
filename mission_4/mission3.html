@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/css.css">
+    <title>Bilan de rapport</title>
+</head>
+<body>
+  <header>
+    <img src="assets/image/logo.png" alt="Logo d'entreprise" height="100" width="150">
+  </header>
+  <nav>
+    <a href="accueil.html">Accueil</a>
+    <div class="menu">
+      <a href="contexte_kdou.html">Travail sur KDou</a>
+      <div class="contenu_menu">
+        <a href="mission1.html">Mission 1</a>
+        <a href="mission2.html">Mission 2</a>
+        <a href="mission3.html">Mission 3</a>
+      </div>
+    </div>
+    <a href="bilan_de_rapport.html">Bilan du rapport</a>
+  </nav>
+  <div class = "mission3">
+    <h1>Mission 3:</h1>
+		<p class= "mission3_intro"> 
+			Dans le cadre de notre étude sur la base de données de KDou, la mission 3, contenant des problèmes de calculs de résultats et de recherches avec critères précis, est plus axée sur l’utilisation de l’algèbre relationnelle et a privilégier l’utilisation du langage SQL plutôt que l’interface QBE (Query By Eléments).
+		</p>
+		
+		<p class = "paragraphe1">
+			Il nous est également demandé à chacun de notre équipe de concevoir une requête/indicateur personnalisée qui pourrait traiter sur une problématique que pourrait rencontrer KDou. Nous avons donc réfléchis et chacun conçu un indicateurs :
+		</p>
+		
+		<div class= "cyrilrequete" >
+			<li>
+				<strong> Cyril : </strong> <br>
+				Enoncé : Quels sont les produits qui ont été commandés entre 1 à 5 fois ?
+				Construction : Cette requête est utile à KDOU car on peut voir les produits qui ne sont pas populaires auprès des clients. Elle permet à KDOU de faire un diagnostic sur la popularité de ses produits.
+					<br>
+					<br>	
+				Code SQL : <br>
+				SELECT DISTINCT(Produit.NomProd), DetailCommande.QteCom <br>
+				FROM Produit INNER JOIN DetailCommande ON Produit.RefProd = DetailCommande.RefProd <br>
+				WHERE DetailCommande.QteCom IN (SELECT QteCom FROM DetailCommande WHERE DetailCommande.QteCom <= 5) AND DetailCommande.QteCom IN (SELECT QteCom FROM DetailCommande WHERE  <br>DetailCommande.QteCom >= 1); <br>
+			</li>
+		</div>
+		
+		<div class= "image_requete_cyril">
+			<p>
+			Résultat:
+			</p>
+			<img src="assets/image/requete_cyril.png" alt="Capture d'écran résultat de la requête de Cyril">
+		</div>
+		</div>
+	  
+	  <div class= "aswinrequete" >
+			<li>
+				<strong>Aswin : </strong><br>
+				Combien les clients payent-ils pour le transport des commandes ?
+				Construction : Cet énoncé  a été developpé car clients payent plusieurs produits de plusieurs fournisseurs. Et donc cela amène à avoir une liste de plusieurs commandes de plusieurs clients. Ainsi pour trouver ces commandes, cela pourrait être difficile de faire la somme des frais de transports. Et donc cette requête permet de la corriger.
+					<br>
+					<br>	
+				Code SQL : <br>
+				SELECT CL.CodeCli, SUM(C.Port) AS Frais_de_Port <br>
+				FROM Commande AS C INNER JOIN Client AS CL <br>
+				ON C.CodeCli = CL.CodeCli <br>
+				GROUP BY CL.CodeCli<br>
+				ORDER BY 1;<br>
+			</li>	
+		<div class= "image_requete_aswin">
+			<p>
+			Résultat:
+			</p>
+			<img src="assets/image/requete_aswin.png" alt="Capture d'écran résultat de la requête de Aswin">
+		</div>
+	</div>
+		<div class= "danyrequete" >
+			<li>
+				<strong>Dany : </strong><br>
+				Quels sont les produits qui sont encore en stock ?
+				Construction : Cet énoncé  a été developpé car car elle permet à KDou de réintroduire, racheter les produits qui sont en rupture de stock. C’est un bon moyen d’avoir un contrôle sur les produits et ainsi optimiser les achats de ces derniers et d’augmenter en plus le profit de l’entreprise en réduisant les pertes via les achats inutiles.
+					<br>
+					<br>	
+				Code SQL : <br>
+				SELECT Produit.NomProd, Produit.UniteStock <br>
+				FROM Produit <br>
+				WHERE Produit.UniteStock > 0;<br>
+			</li>	
+			<div class= "image_requete_dany">
+				<p>
+				Résultat:
+				</p>
+				<img src="assets/image/requete_dany.png" alt="Capture d'écran résultat de la requête de Dany">
+			</div>
+	</div>
+	  
+	<div class= "danyrequete" >
+		<li>
+			<strong>Dany : </strong><br>
+			Quels sont les produits qui sont encore en stock ?
+			Construction : Cet énoncé  a été developpé car car elle permet à KDou de réintroduire, racheter les produits qui sont en rupture de stock. C’est un bon moyen d’avoir un contrôle sur les produits et ainsi optimiser les achats de ces derniers et d’augmenter en plus le profit de l’entreprise en réduisant les pertes via les achats inutiles.
+				<br>
+				<br>	
+			Code SQL : <br>
+			SELECT Produit.NomProd, Produit.UniteStock <br>
+			FROM Produit <br>
+			WHERE Produit.UniteStock > 0;<br>
+		</li>	
+			<div class= "image_requete_dany">
+				<p>
+				Résultat:
+				</p>
+				<img src="assets/image/requete_dany.png" alt="Capture d'écran résultat de la requête de Dany">
+			</div>
+	</div>
+	
+	<div class= "gaelrequete" >
+		<li>
+			<strong>Gael : </strong><br>
+			Quelle est le chiffre d’affaires pour chacun des fournisseurs ?
+			<strong>Construction : </strong>Cette requête est importante car elle permet de connaitre dans notre base de données de savoir quel client nous rapporte le plus.
+				<br>
+				<br>	
+			Code SQL : <br>
+			SELECT F.NoFour, F.Societe, SUM((DC.QteCom * (DC.PrixUnitCli - DC.Remise)) - C.Port) AS CA<br>
+			FROM (Fournisseur AS F INNER JOIN Produit AS P ON F.NoFour = P.NoFour) INNER JOIN (DetailCommande AS DC INNER JOIN Commande AS C ON<br> DC.NoCom = C.NoCom) ON P.RefProd = DC.RefProd<br>
+			GROUP BY F.NoFour, F.Societe;<br>
+		</li>	
+			<div class= "image_requete_gael">
+				<p>
+				Résultat:
+				</p>
+				<img src="assets/image/requete_gael.png" alt="Capture d'écran résultat de la requête de Gael">
+			</div>
+	</div>
+	
+	
+    <p class = "paragraphe2">
+			La conception de requêtes avec SQL est plus intéressante qu’avec l’interface graphique car elle permet de gérer des paramètres que nous ne voyons pas avec l’interface graphique. Par exemple, pour concevoir des sous requêtes, il est beaucoup plus facile de le faire en SQL qu’en utilisant une interface graphique, notamment pour faire des sous jointures ou des jointures droite ou gauche par exemple. De plus, la volonté de KDou a promouvoir des produits bon pour la santé et pour la planète a permis de sélectionner et d’analyser en profondeur les données de KDou.
+		</p>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="bloc_reseau" >
+    <p>Venez nous suivre</p>
+    <ul>
+      <a href="mission3.html">Youtube</a>
+      <a href="mission3.html">Instagram</a>
+      <a href="mission3.html">Facebook</a>
+      <a href="mission3.html">X</a>
+    </ul>
+  </div>
+  <hr>
+  <div class="droits_conditions">
+    <p>&copy; KDOU (France)</p>
+    <p>Page réalisée par Aswin et Dany</p>
+    <p>Mentions légales</p>
+    <p>Condition d'utilisation</p>
+    <p>Paramètre de confidentialité</p>
+    <p>Protection de données</p>
+  </div>
+</footer>
+</html>

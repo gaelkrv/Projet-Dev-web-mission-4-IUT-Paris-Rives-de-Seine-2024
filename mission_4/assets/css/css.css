@@ -212,14 +212,14 @@ nav a:hover, .contenu_menu a:hover {
 .bilan_rapport .paragraphe_1{
     position: relative;
     padding-right: 500px;
-    margin : 50px 0 0 25px;
+    margin : 50px 25px 0 25px;
     border : 5px solid blue;
 }
 
 .bilan_rapport .paragraphe_2{
     position: relative;
     padding-left: 370px;
-    margin : 100px 0 100px 0;
+    margin : 100px 25px 100px 25px;
     border : 5px solid green;
 }
 

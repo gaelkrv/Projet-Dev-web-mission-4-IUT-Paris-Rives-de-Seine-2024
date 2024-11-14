@@ -1,104 +1,71 @@
+<!-- Création de la page HTML -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!-- Création du head et liaison avec le fichier css-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/css.css">
     <title>Bilan de rapport</title>
 </head>
+<!--**************Début du body**************-->
 <body>
   <header>
-    <img src="assets/image/logo.png" alt="Logo d'entreprise" height="100" width="150">
+    <img src="assets/image/logo.png" alt="Logo d'entreprise" height="100" width="150"> <!-- Création de l'image du logo de l'entreprise -->
   </header>
-  <nav>
+  <nav> <!-- Création de la barre de navigation-->
     <a href="accueil.html">Accueil</a>
     <div class="menu">
-      <a href="contexte_kdou.html">Travail sur KDou</a>
+      <a>Travail sur KDou</a> <!-- L'onglet Travail sur KDou comporte les 3 missions avec leur lien -->
       <div class="contenu_menu">
         <a href="mission1.html">Mission 1</a>
         <a href="mission2.html">Mission 2</a>
         <a href="mission3.html">Mission 3</a>
       </div>
     </div>
-    <a href="bilan_de_rapport.html">Bilan de rapport</a>
+    <a href="bilan_de_rapport.html">Bilan de rapport</a> <!-- L'onglet dirigeant vers le bilan du travail effectué pour le projet (la même page ici) -->
   </nav>
-  <div class = "bilan_rapport">
-    <h1>Bilan de rapport :</h1>
-      <p class = "paragraphe_1">Enfin, pour permettre la rédaction de ce rapport sur web, nous avons en premier dû apprendre à utiliser <strong>Access</strong>
-        car les missions 1,2 et 3 requierent <strong>un savoir-faire</strong> des requêtes que ce soit en <strong>QBE</strong>
-        <em>(Query By Example)</em> ou en <strong>SQL</strong> <em>(Structured Query Language)</em>. Ainsi l'apprentissage d'Access, c'est
-        aussi savoir <strong>lire</strong> les données sur les tables et
-        <strong>réaliser</strong> les requêtes demandées sur ces dernières. En effet, savoir lire les données était très important lors de
-        la réalisation des différentes missions puisque des <strong>erreurs de saisie</strong> sont présentes dans la base de données de
-        KDou , erreurs face auxquelles <strong>nous devons être vigilants pour corriger / adapter nos requêtes à ces erreurs</strong> et
-        ainsi les prendre en compte. Il y avait également un bon nombre de <strong>"problème de contexte"</strong>, parfois certaines
-        questions n'étaient pas assez explicites pour nous <strong>pousser à réfléchir et comprendre / mieux comprendre les
-        attributs</strong> des tables et <strong>l'interprétation</strong> qui devait en être faite.
-        Ainsi,nous avons réussi toutes les questions des 3 différentes missions <em>(sauf si nous avons mal compris l'une
-        d'entre elles).</em>
+  <div class = "bilan_rapport"> <!-- Création de la class bilan_rapport qui englobe le bilan sur le travail effectué, divisé en 4 paragraphes dont les class sont "paragraphe_x" -->
+    <h1>Bilan de rapport :</h1> <!-- Titre de la page -->
+      <!-- Paragraphe sur le cheminement en Base de Données -->
+      <p class = "paragraphe_1">
+        Enfin, pour permettre la rédaction de ce rapport sur web, nous avons en premier dû apprendre à utiliser <strong>Access</strong> car les missions 1,2 et 3 requierent <strong>un savoir-faire</strong> des requêtes que ce soit en <strong>QBE</strong><em>(Query By Example)</em> ou en <strong>SQL</strong> <em>(Structured Query Language)</em>. Ainsi l'apprentissage d'Access, c'est aussi savoir <strong>lire</strong> les données sur les tables et <strong>réaliser</strong> les requêtes demandées sur ces dernières. En effet, savoir lire les données était très important lors de la réalisation des différentes missions puisque des <strong>erreurs de saisie</strong> sont présentes dans la base de données de KDou , erreurs face auxquelles <strong>nous devons être vigilants pour corriger / adapter nos requêtes à ces erreurs</strong> et ainsi les prendre en compte. Il y avait également un bon nombre de <strong>"problème de contexte"</strong>, parfois certaines questions n'étaient pas assez explicites pour nous <strong>pousser à réfléchir et comprendre / mieux comprendre les attributs</strong> des tables et <strong>l'interprétation</strong> qui devait en être faite. Ainsi,nous avons réussi toutes les questions des 3 différentes missions <em>(sauf si nous avons mal compris l'une d'entre elles).</em>
       </p>
+    <!-- Paragraphe sur le cheminement en HTML et CSS-->
       <p class = "paragraphe_2">
-        Ainsi pour la réalisation de ce rapport, nous avons aussi dû <strong>appronfondir</strong> nos connaissances en
-        <strong>HTML et en CSS</strong>, les deux éléments clés du site web. Donc en nous aidant des
-        cours fournis par <strong>Mr Giustignano</strong> et des TP réalisés avec <strong>Mr RICON HERNANDEZ</strong> <em>(notamment
-        pour la barre de navigation)</em> et en ciblant bien
-        <strong>les éléments / caractéristiques que l'on voulait créer sur le site un par un</strong>, nous avons pu avancer et structurer
-        progressivement le site pour le compte-rendu. De plus, nous avons dû aussi nous <strong>organiser</strong> en tant que groupe pour
-        bien réunir les différentes pages demandées pour le rapport, nous avons dû réfléchir à un <strong>wireframe</strong> de la page
-        qui n'était pas trop facile à réaliser pour nous <strong>challenger</strong> mais pas non plus trop complexe pour notre niveau
-        débutant, le wireframe a été imaginé de sorte à ce que chaque personne du groupe soit en mesure de <strong>s'inspirer/
-        reprendre des éléments vu en cours, en TP ou en Amphithéâtre.</strong> De ce fait, nous avons formé <strong>deux duos</strong>
-        au sein de notre équipe : <strong>Aswin et Dany</strong> étant le premier duo et <strong>Cyril et Gael</strong> le deuxième duo.
-        Au premier duo était attitré la page d'accueil, la mission 2 et le bilan du rapport.
-        Au deuxième duo était attitré la mission 1 et la mission 3.
+        Ainsi pour la réalisation de ce rapport, nous avons aussi dû <strong>appronfondir</strong> nos connaissances en <strong>HTML et en CSS</strong>, les deux éléments clés du site web. Donc en nous aidant des cours fournis par <strong>Mr Giustignano</strong> et des TP réalisés en classe avec <strong>Mr RICON HERNANDEZ</strong> <em>(notamment pour la barre de navigation)</em> et en ciblant bien <strong>les éléments / caractéristiques que l'on voulait créer sur le site un par un</strong>, nous avons pu avancer et structurer progressivement le site pour le compte-rendu. De plus, nous avons dû aussi nous <strong>organiser</strong> en tant que groupe pour bien réunir les différentes pages demandées pour le rapport, nous avons dû réfléchir à un <strong>wireframe</strong> de la page qui n'était pas trop facile à réaliser pour nous <strong>challenger</strong> mais pas non plus trop complexe pour notre niveau débutant, le wireframe a été imaginé de sorte à ce que chaque personne du groupe soit en mesure de <strong>s'inspirer/reprendre des éléments vu en cours, en TP ou en Amphithéâtre.</strong> De ce fait, nous avons formé <strong>deux duos</strong> au sein de notre équipe : <strong>Aswin et Dany</strong> étant le premier duo et <strong>Cyril et Gael</strong> le deuxième duo. Au premier duo était attitré la page d'accueil, la mission 2 et le bilan du rapport. Au deuxième duo était attitré la mission 1 et la mission 3.
       </p>
+    <!-- Paragraphe sur le cheminement en HTML et CSS en tant que groupe-->
       <p class = paragraphe_3>
-        Au départ nous codions les pages chacun de notre côté puis
-        nous nous sommes rapidement rendu compte qu'il fallait déja inclure des <strong>classes</strong> dans nos codes html.
-        Sans cela, le CSS ne pouvait pas gérer toutes les modifications de style et de position
-        que nous souhaitions appliquer aux différents textes. En effet, les balises HTML sont <strong>uniques</strong>
-        mais <strong>pas assez nombreuses</strong> et ne suffisent pas pour répondre aux besoins
-        d'un projet nécessitant de <strong>nombreuses variations du texte.</strong> Donc l'utilisation des classes est devenu
-        nécessaire pour ce projet puisqu'il implique la créatioon de <strong>plusieurs pages web et des styles variés.</strong>
-        Initialement, pour coder en groupe, nous utilisions la fonctionnalité sur WebStorm qui s'appelle <em>"Code With Me"</em>
-        qui permet à des utilisateurs de rejoindre un projet. C'était <strong>assez facile d'accès</strong> cependant lorsque l'hôte qui
-        a lancé la fonctionnalité se déconnecte, tous les autres utilisateurs n'ont plus accès au projet. Cela était
-        donc <strong>très embêtant</strong>, ainsi nous avons par la suite coder en groupe via <strong>github</strong>,
-        qui est beaucoup <strong>plus difficile d'accès</strong> <em>(nous trouvons)</em> mais qui permet d'avoir un "cloud" du projet qui est
-        <strong>très pratique</strong> pour le travail de groupe.
+        Au départ nous codions les pages chacun de notre côté puis nous nous sommes rapidement rendu compte qu'il fallait déja inclure des <strong>classes</strong> dans nos codes HTML. Sans cela, le CSS ne pouvait pas gérer toutes les modifications de style et de position que nous souhaitions appliquer aux différents textes. En effet, les balises HTML sont <strong>uniques</strong> mais <strong>pas assez nombreuses</strong> et ne suffisent pas pour répondre aux besoins d'un projet nécessitant de <strong>nombreuses variations du texte.</strong> Donc l'utilisation des classes est devenu nécessaire pour ce projet puisqu'il implique la création de <strong>plusieurs pages web et des styles variés.</strong> Initialement, pour coder en groupe, nous utilisions la fonctionnalité sur WebStorm qui s'appelle <em>"Code With Me" </em>qui permet à des utilisateurs de rejoindre un projet. C'était <strong>assez facile d'accès</strong> cependant lorsque l'hôte qui a lancé la fonctionnalité se déconnecte, tous les autres utilisateurs n'ont plus accès au projet. Cela était donc <strong>très embêtant</strong>, ainsi nous avons par la suite coder en groupe via <strong>github</strong>, qui est beaucoup <strong>plus difficile d'accès</strong> <em>(nous trouvons)</em> mais qui permet d'avoir un "cloud" du projet qui est <strong>très pratique</strong> pour le travail de groupe.
       </p>
+    <!-- Conclusion générale du compte rendu et des 3 missions -->
       <p class = "paragraphe_4">
-        En conclusion, nous pensons donc qu'<strong>en tant que groupe</strong>, nous avons
-        </strong>bien évolué et progressé en Base de Données.</strong> Nous avons complété les différentes missions
-        sans faire d'impasses et avons su surmonter <strong>toutes les difficultés rencontrées.</strong>
-        Pareillement <strong>en HTML et en CSS, nous avons très largement progressé</strong>, la pratique via le code nous permet vraiment
-        de mieux <strong>retenir</strong> ce qui a été présenté en cours et permet également de nous
-        <strong>familiariser avec l'interface de code</strong>
-        (ici WebStorm). Cependant, nous pensons évidemment qu'il reste <strong>des points d'amélioration possibles</strong> que ce soit
-        dans les missions 1,2 et 3 ou encore sur le site. Ces points d'amélioration sont présentés dans le tableau ci-dessous :
+        En conclusion, nous pensons donc qu'<strong>en tant que groupe</strong>, nous avons </strong>bien évolué et progressé en Base de Données.</strong> Nous avons complété les différentes missions sans faire d'impasses et avons su surmonter <strong>toutes les difficultés rencontrées.</strong>Pareillement <strong>en HTML et en CSS, nous avons très largement progressé</strong>, la pratique via le code nous permet vraiment de mieux <strong>retenir</strong> ce qui a été présenté en cours et permet également de nous <strong>familiariser avec l'interface de code</strong> (ici WebStorm). Cependant, nous pensons évidemment qu'il reste <strong>des points d'amélioration possibles</strong> que ce soit dans les missions 1,2 et 3 ou encore sur le site. Ces points d'amélioration sont présentés dans le tableau ci-dessous :
       </p>
-    <div class="couple_image">
+    <div class="couple_image"> <!-- Création de la class couple_image qui réprésente les deux images présentes sur la page du bilan,la première avec l'image HTML et le CSS et la deuxième avec l'image SQL  -->
       <img src="assets/image/html_css.png" alt="html_css">
-      <img src="assets/image/sql.jpg" alt="sql">
+      <img src="assets/image/sql.png" alt="sql">
     </div>
   <table>
-    <caption>Points d'amélioration</caption>
+    <caption>Points d'amélioration</caption> <!-- Titre du tableau sur les points d'amélioration -->
     <tr>
-      <th>En Base de Données</th>
+      <th>En Base de Données</th> <!-- th le nom des colonnes -->
       <th>En HTML/CSS</th>
     </tr>
     <tr>
-      <td>
-        <ul>
-          <li>La présentation de notre première mission peut être amélioré.</li>
+      <td> <!-- td le contenu du tableau-->
+        <ul> <!-- Liste non ordonnée -->
+          <!-- Liste à puces pour présenter les améliorations possibles -->
+          <li>Dans la Base de Données en elle-même de la mission 3,l'affichage généré aurait pu être améliorer. Nous aurions pu utiliser des ORDER BY pour présenter par ordre alphabétique ou par ordre croissant les valeurs.</li>
           <li>Dans les mission 1, nous répondons uniquement par une phrase réponse, nous aurions dû présenter la reqûete QBE et l'affichage généré.</li>
           <li>Dans la mission 2 nous répondons par une phrase réponse et une requête QBE, nous aurions ici dû présenter l'affichage généré en plus.</li>
           <li>Les questions des trois missions peuvent être mieux présentés.</li>
-          <li>Les données auraient pu être encore plus mis en valeur avec des textes en gras,italiques et soulignés dans les deux premières missions.</li>
+          <li>Sur le rapport de Base de Données, les données auraient pu être encore plus mis en valeur avec des textes en gras,italiques et soulignés dans les deux premières missions.</li>
         </ul>
       </td>
       <td>
-        <ul>
+        <ul> <!-- Liste non ordonnée -->
+          <!-- Liste à puces pour présenter les améliorations possibles -->
           <li>Le fond des pages pourrait être plus coloré et vivant.</li>
           <li>Les textes pourraient être de couleur différente.</li>
           <li>Les images pourraient être un peu plus utilisés pour éviter des zones de vide.</li>
@@ -109,14 +76,15 @@
     </tr>
   </table>
   </div>
+<!--**************Début du footer**************-->
 <footer>
-  <div class="bloc_reseau" >
+  <div class="bloc_reseau" > <!-- Création de la class bloc_reseau qui englobe tout le footer-->
     <p>Venez nous suivre</p>
     <ul>
-      <a href="mission3.html">Youtube</a>
-      <a href="mission3.html">Instagram</a>
-      <a href="mission3.html">Facebook</a>
-      <a href="mission3.html">X</a>
+      <a href="youtubekdou.html">Youtube</a>
+      <a href="instagramkdou.com">Instagram</a>
+      <a href="facebookkdou.com">Facebook</a>
+      <a href="twitterkdou.com">X</a>
     </ul>
   </div>
   <hr>
@@ -129,5 +97,7 @@
     <p>Protection de données</p>
   </div>
 </footer>
+<!--**************Fin du footer**************-->
 </body>
+<!--**************Fin du body**************-->
 </html>

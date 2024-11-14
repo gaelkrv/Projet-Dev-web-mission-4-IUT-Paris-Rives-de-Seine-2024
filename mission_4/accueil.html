@@ -1,51 +1,54 @@
+<!-- Création de la page HTML -->
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head> <!-- Création du head et liaison avec le fichier css-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/css.css">
     <title>Accueil</title>
 </head>
+<!--**************Début du body**************-->
 <body>
-    <header>
+    <header> <!-- Création de l'image du logo de l'entreprise -->
         <img src="assets/image/logo.png" alt="Logo d'entreprise" height="100" width="150">
     </header>
-    <nav>
+    <nav> <!-- Création de la barre de navigation-->
         <a href="accueil.html">Accueil</a>
         <div class="menu">
-            <a href="contexte_kdou.html">Travail sur KDou</a>
-            <div class="contenu_menu">
+            <a>Travail sur KDou</a> <!-- L'onglet Travail sur KDou comporte les 3 missions avec leur lien -->
+            <div class="contenu_menu"> <!-- Création de la class contenu_menu qui permet la redirection vers les 3 missions -->
                 <a href="mission1.html">Mission 1</a>
                 <a href="mission2.html">Mission 2</a>
                 <a href="mission3.html">Mission 3</a>
             </div>
         </div>
-        <a href="bilan_de_rapport.html">Bilan de rapport</a>
+        <a href="bilan_de_rapport.html">Bilan de rapport</a> <!-- L'onglet dirigeant vers le bilan du travail effectué pour le projet -->
     </nav>
-    <div class = "presentation_groupe">
+    <div class = "presentation_groupe"> <!-- Création de la class presentation_groupe qui englobe la courte présentation de notre groupe -->
         <h1>Présentation du groupe :</h1>
         <p>Nous sommes en classe 110 et notre groupe est composé de :</p>
-        <ol>
+        <ol> <!-- Liste ordonnée (par ordre alphabétique)-->
+            <!-- Liste à puces pour présenter les membres du groupe -->
             <li>Aswin SIVASEKARAN</li>
             <li>Cyril NGUYEN</li>
             <li>Dany LIM</li>
             <li>Gael KERVINIO</li>
         </ol>
     </div>
-    <div class = "introduction_travail">
+    <div class = "introduction_travail"> <!-- Création de la class introduction_travail qui englobe tout le texte sur l'introduction du travail -->
         <h1>Introduction du travail</h1>
-        <p>Tout d'abord, pour la <strong>SAE 1.04</strong> donc la <strong>Mission 4 en "CREATION D’UNE BASE DE DONNEES"</strong>, il nous a été demandé de réaliser un rapport pour la <strong><u>Ressource R1.02</u> Dev. Interface Web</strong>. L'objectif du rapport est de rendre compte du travail effectué en base de données via un site web, dans lequel est repertorié <strong>les traces de nos recherches en SQL</strong> sur les données de l'entreprise KDou. Ce rapport est un compte-rendu des missions 1,2 et 3 en base de données.
+        <p>Tout d'abord, pour la <strong><u>SAE 1.04</u></strong> donc la <strong>Mission 4 en "CREATION D’UNE BASE DE DONNEES"</strong>, il nous a été demandé de réaliser un rapport pour la <strong><u>Ressource R1.02</u> Dev. Interface Web</strong>. L'objectif du rapport est de rendre compte du travail effectué en base de données via un site web, dans lequel est repertorié <strong>les traces de nos recherches en SQL</strong> sur les données de l'entreprise KDou. Ce rapport est un compte-rendu des missions 1,2 et 3 en base de données.
             <br>Pour plus de contexte, <strong>KDou est donc un business</strong> <em>(fictif)</em> crée en 2018, spécialisé en <strong>import et export</strong> de produits d'épicerie de diverses provenances comme le Japon,le Canada,l'Italie et plus encore et qui a pour objectif d'apporter <strong>une variété de produits culinaires venant du monde entier dans les restaurants français.</strong></br></p>
-        <img src ="assets/image/kdou_business.png" alt="Business KDou",width = "350", height = "352">
+        <img src ="assets/image/kdou_business.png" alt="Business KDou",width = "350", height = "352"> <!-- Création de l'image KDou qui est placée à droite du texte sur la page d'accueil -->
     </div>
     <footer>
-        <div class="bloc_reseau" >
+        <div class="bloc_reseau" > <!-- Création de la class bloc_reseau qui englobe tout le footer-->
             <p>Venez nous suivre</p>
             <ul>
-                <a href="mission3.html">Youtube</a>
-                <a href="mission3.html">Instagram</a>
-                <a href="mission3.html">Facebook</a>
-                <a href="mission3.html">X</a>
+                <a href="youtubekdou.html">Youtube</a>
+                <a href="instagramkdou.com">Instagram</a>
+                <a href="facebookkdou.com">Facebook</a>
+                <a href="twitterkdou.com">X</a>
             </ul>
         </div>
         <hr>
@@ -59,4 +62,5 @@
         </div>
     </footer>
 </body>
+<!--**************Fin du body**************-->
 </html>

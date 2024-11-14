@@ -139,7 +139,7 @@ nav a:hover, .contenu_menu a:hover {
 /**** Requêtes ****/
 .requete1, .requete2, .requete3 {
     display: flex;
-    text-align: center;
+    justify-content: center;
     
 }
 .requete1, .requete2, .requete3 {

@@ -119,6 +119,61 @@ nav a:hover, .contenu_menu a:hover {
 
 /*************************FIN de la page "Travail sur KDou"**************************/
 
+/**************************Début de la Mission 1 ************************************/
+
+/****Contexte****/
+.mission1 .texte h1{
+    font-family : "Agency FB";
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.mission1 .texte .contexte{
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-family : "sans-serif";
+}
+
+/**** Requêtes ****/
+.requete1, .requete2, .requete3 {
+    display: flex;
+    text-align: center;
+    
+}
+.requete1, .requete2, .requete3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding: 20px;
+    gap: 30px;
+}
+.requete1 .ei1, .requete2 .ei2, .requete3 .ei3 {
+    border: 2px solid black;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+/****Perspective d'amélioration et conclusion****/
+.amelioration {
+    border: 2px solid black;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+.conclusion {
+    border: 2px solid black;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+/**************************Fin de la Mission 1 ************************************/
+
 /***************DEBUT de Mission 3***************/
 .mission3 h1 { /* Style de base de la page web pour le titre*/
     font-family : "Agency FB";

@@ -1,10 +1,16 @@
 /*************************DEBUT de Haut de page****************************/
 html, body {
     margin: 0;
-    width: 100%;
-    height: 100%;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Remplissage de l'espace */
+body, main {
+    flex: 1;
+}
 header{
     text-align: center;
 }
@@ -181,6 +187,113 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 }
 /**************************Fin de la Mission 1 ************************************/
 
+
+/**************************Début de la Mission 2 ************************************/
+details > summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+/*Ajout du contenue avant le contenue principale*/
+details > summary::before {
+    content: '▶';
+    margin-right: 8px;
+}
+
+/*Ajout du contenue avant le contenue principale que lorsqu'il est ouvert*/
+details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+/****Titre****/
+.mission2 .contenu_m2 h1{
+    font-family : "Agency FB";
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+/*Contexte*/
+.mission2 .contenu_m2 .contexte_m2{
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-family : "sans-serif";
+}
+
+/**** Légende ****/
+.sql_m2{
+    color: darkblue;
+}
+.qbe_m2{
+    color: red;
+}
+.reponse_m2{
+    color: green;
+}
+
+/**** Requêtes ****/
+.requete1_m2, .requete2_m2, .requete3_m2, .requete4_m2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+/**/
+.container1_m2, .container2_m2, .container2_m2, .container3_m2, .container4_m2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Enoncé/Interprétation */
+.ei1_m2, .ei2_m2, .ei3_m2, .ei4_m2{
+    border: 2px solid black;
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+/*SQL*/
+.SQL1_m2, .SQL2_m2, .SQL3_m2, .SQL4_m2{
+    font-size: 1.2em;
+    border: 2px solid darkblue;
+    margin: 5px;
+    padding: 10px;
+}
+
+/*QBE*/
+.QBE1_m2, .QBE2_m2, .QBE3_m2, .QBE4_m2{
+    border: 2px solid red;
+    margin: 5px;
+    padding: 10px;
+    height: 100px;
+    width: 500px;
+}
+/*Tableau réponse*/
+.reponse1_m2, .reponse2_m2, .reponse3_m2, .reponse4_m2 {
+    border: 2px solid green;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Bordure intérieure du tableau réponse */
+.reponse1_m2 tr th,.reponse1_m2 tr td, .reponse2_m2 tr th, .reponse2_m2 tr td, .reponse3_m2 tr th, .reponse3_m2 tr td, .reponse4_m2 tr th, .reponse4_m2 tr td{
+    border: 1px solid black;
+}
+
+/**************************FIN de la Mission 2 ************************************/
+
 /***************DEBUT de Mission 3***************/
 .mission3 h1 { /* Style de base de la page web pour le titre*/
     font-family : "Agency FB";
@@ -328,7 +441,7 @@ th,td{
 footer {
     background-color: #2b6f29;
     padding: 0;
-    margin: 0;
+    margin-top: auto;
     width: 100%;
 }
 
@@ -351,10 +464,6 @@ footer {
     color: #F1F1F1;
 }
 
-.bloc_reseau ul a:last-child {
-    margin-right: 0;
-}
-
 .bloc_reseau ul a:hover {
     color: black;
 }
@@ -362,18 +471,17 @@ footer {
 hr {
     border: 1px solid #fff;
     margin-bottom: 5px;
-    width: 80%;
+    width: 90%;
 }
 
-.droits_conditions{
+.droits_conditions {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-
 }
 
-.droits_conditions p{
+.droits_conditions p {
     color: white;
     margin-left: 50px;
 }

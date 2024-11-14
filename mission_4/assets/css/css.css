@@ -152,8 +152,8 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 /**** Requêtes ****/
 .requete1, .requete2, .requete3 {
     display: flex;
+    align-items: center;
     justify-content: center;
-    
 }
 .requete1, .requete2, .requete3 {
     display: flex;
@@ -170,25 +170,7 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
     width: 80%;
 }
 
-/****Perspective d'amélioration et conclusion****/
-.amelioration {
-    border: 2px solid black;
-    font-size: 1.2em;
-    margin: 10px;
-    padding: 10px;
-    width: 80%;
-}
-.conclusion {
-    border: 2px solid black;
-    font-size: 1.2em;
-    margin: 10px;
-    padding: 10px;
-    width: 80%;
-}
-/**************************Fin de la Mission 1 ************************************/
-
-
-/**************************Début de la Mission 2 ************************************/
+/*Application de l'élément detail et son enfant summary*/
 details > summary {
     display: flex;
     justify-content: center;
@@ -203,7 +185,44 @@ details > summary::before {
     margin-right: 8px;
 }
 
-/*Ajout du contenue avant le contenue principale que lorsqu'il est ouvert*/
+ /*Lorsqu'il est ouvert, ajout du contenue avant le contenue principale*/
+details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+/****Perspective d'amélioration et conclusion****/
+.amelioration {
+    display: flex;
+    text-align: center;
+    font-size: 1.3em;
+}
+.conclusion {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+/**************************Fin de la Mission 1 ************************************/
+
+
+
+/**************************Début de la Mission 2 ************************************/
+/*Application de l'élément detail et son enfant summary*/
+details > summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+/*Ajout du contenue avant le contenue principale*/
+details > summary::before {
+    content: '▶';
+    margin-right: 8px;
+}
+
+ /*Lorsqu'il est ouvert, ajout du contenue avant le contenue principale*/
 details[open] > summary::before {
     transform: rotate(90deg);
 }

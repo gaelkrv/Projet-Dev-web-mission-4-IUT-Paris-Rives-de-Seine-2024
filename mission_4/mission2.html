@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+  <html lang="fr" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/css.css">
+    <title>Accueil</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/image/logo.png" alt="Logo d'entreprise" height="100" width="150">
+    </header>
+    <nav>
+      <a href="accueil.html">Accueil</a>
+      <div class="menu">
+        <a href="contexte_kdou.html">Travail sur KDou</a>
+        <div class="contenu_menu">
+          <a href="mission1.html">Mission 1</a>
+          <a href="mission2.html">Mission 2</a>
+          <a href="mission3.html">Mission 3</a>
+        </div>
+      </div>
+      <a href="bilan_de_rapport.html">Bilan de rapport</a>
+    </nav>
+    <div class="mission2">
+      <div class="contenu_m2">
+        <h1>Mission 2</h1>
+        <p class="contexte_m2">Dans le cadre de notre étude sur la base de données de KDou, la mission 2 consiste à analyser les données,
+          tout en répondant aux multitudes requêtes.<br>Ces requêtes représentent des indicateurs sur les habitudes et les comportements des clients.
+          Nous nous devons de rester également lucides, car des erreurs de données peuvent être dissimulées.<br>Voici une partie des requêtes demandées :<br>
+        </p>
 
+        <details>
+          <summary><h2 class="summary_m2">Requête n°1</h2></summary>
+          <div class="requete1_m2">
+            <p class="ei1_m2"><strong>Énoncé n°1:</strong> <br><br>Nous voulons savoir, quelles sont les catégories de produits vendus par les fournisseurs Singapouriens,
+              afin de connaître quels types de produits vendent ils. <br><br>
+              <strong>Interprétation :</strong> <br><br>On remarque qu'il y en a que 2 catégories de produits vendues,
+              qui sont la boisson (où le numéro de la catégorie est 1) et les condiments (où son numéro est de 2).
+              On peut ainsi voir que seuls 4 produits proviennent de Singapour parmi nos produits vendues. C'est pourquoi cette démarche permet de
+              retrouver les produits/catégories d'un fournisseur spécifique.<br><br><br>
+              <strong>Légende:</strong> <br><br> <span class="sql_m2">SQL</span><br>  <span class="qbe_m2">QBE</span><br>  <span class="reponse_m2">Résultat de la requête</span><br> </span>
+            </p>
+            <div class="container1_m2">
+              <p class="SQL1_m2">SELECT Fournisseur.Societe, Fournisseur.NoFour, Fournisseur.Pays,
+                Produit.CodeCateg, Produit.NomProd
+                <br>FROM Fournisseur INNER JOIN Produit ON Fournisseur.NoFour = Produit.NoFour
+                <br>WHERE (((Fournisseur.Pays)="Singapour"));
+              </p>
+              <img class="QBE1_m2" src="assets/image/QBE_requete1.png" alt="QBE de la 1ère requête" height="100" width="500">
+              <table class="reponse1_m2">
+                <tr>
+                  <th>Societe</th>
+                  <th>NoFour</th>
+                  <th>Pays</th>
+                  <th>CodeCateg</th>
+                  <th>NomProd</th>
+                </tr>
+                <tr>
+                  <td>Leka Trading</td>
+                  <td>20</td>
+                  <td>Singapour</td>
+                  <td>1</td>
+                  <td>Ipoh Coffee</td>
+                </tr>
+                <tr>
+                  <td>Leka Trading</td>
+                  <td>20</td>
+                  <td>Singapour</td>
+                  <td>2</td>
+                  <td>Gula Malacca</td>
+                </tr>
+                <tr>
+                  <td>Leka Trading</td>
+                  <td>20</td>
+                  <td>Singapour</td>
+                  <td>2</td>
+                  <td>Laksa Paste</td>
+                </tr>
+                <tr>
+                  <td>Leka Trading</td>
+                  <td>20</td>
+                  <td>Singapour</td>
+                  <td>1</td>
+                  <td>Sambal Chilli Sauce</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><h2 class="summary_m2">Requête n°2</h2></summary>
+          <div class="requete2_m2">
+            <p class="ei2_m2"><strong>Énoncé n°2:</strong> <br><br> Nous souhaitons savoir quels sont les produits suédois afin de proposer
+              aux clients nos gammes de produits suédois. <br><br>
+              <strong>Interprétation :</strong> <br><br>  On peut remarquer qu'il y a un léger souci dans
+              la base de données. En effet, on peut remarquer que le pays est marqué de 2 façons "Suède" (bonne syntaxe) et "Suéde".
+              Ainsi cela créer de problèmes de cohérence, et pourrait entraîner des erreurs considérables à l'entreprise. De cette manière,
+              on a en tous 7 produits suédois dont 3 produits d'origine de la mauvaise syntaxe (Suéde). <br><br><br>
+              <strong>Légende:</strong> <br><br> <span class="sql_m2">SQL</span><br>  <span class="qbe_m2">QBE</span><br>  <span class="reponse_m2">Résultat de la requête</span><br> </span>
+            </p>
+            <div class="container2_m2">
+              <p class="SQL2_m2">SELECT Fournisseur.Pays, Produit.NomProd, Produit.RefProd
+                <br>FROM Fournisseur INNER JOIN Produit ON Fournisseur.NoFour = Produit.NoFour
+                <br>WHERE (((Fournisseur.Pays)="Suède" Or (Fournisseur.Pays)="Suéde"));
+              </p>
+              <img class="QBE2_m2" src="assets/image/QBE_requete2.png" alt="QBE de la 2e requête" height="120" width="450">
+              <table class="reponse2_m2">
+          <tr>
+            <th>Pays</th>
+            <th>NomProd</th>
+          </tr>
+          <tr>
+            <td>Suède</td>
+            <td>Tunnbröd</td>
+          </tr>
+          <tr>
+            <td>Suède</td>
+            <td>knäckebrod Kala</td>
+          </tr>
+          <tr>
+            <td>Suède</td>
+            <td>Dea Surströmming</td>
+          </tr>
+          <tr>
+            <td>Suéde</td>
+            <td>KanelBullar Stock</td>
+          </tr>
+          <tr>
+            <td>Suéde</td>
+            <td>Inlagd Sill</td>
+          </tr>
+          <tr>
+            <td>Suéde</td>
+            <td>Gravad Iax</td>
+          </tr>
+          <tr>
+            <td>Suéde</td>
+            <td>Röd Kaviar</td>
+          </tr>
+        </table>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><h2 class="summary_m2">Requête n°3</h2></summary>
+            <div class="requete3_m2">
+              <p class="ei3_m2"><strong>Énoncé n°3:</strong> <br><br> Dans notre prochaine tâche, nous voulons en savoir plus de détails sur
+                les produits qu'on vend. Ainsi, nous voulons savoir quel est le prix minimum, moyen et maximum, afin de savoir un peu près
+                les estimations des produits vendus. <br><br>
+                <strong>Interprétation :</strong> <br><br>  Ainsi, d'après nos multitudes de produits vendus,
+                le prix minimum est de 1,00€, et le prix maximum est de 263,5€ avec un prix moyen de 24,68€. <br><br><br>
+                <strong>Légende:</strong> <br><br> <span class="sql_m2">SQL</span><br>  <span class="qbe_m2">QBE</span><br>  <span class="reponse_m2">Résultat de la requête</span><br> </span>
+              </p>
+              <div class="container3_m2">
+                <p class="SQL3_m2">SELECT Avg(DetailCommande.PrixUnitCli) AS MoyenneDePrixUnitCli,
+                  Max(DetailCommande.PrixUnitCli) AS MaxDePrixUnitCli,
+                  Min(DetailCommande.PrixUnitCli) AS MinDePrixUnitCli
+                  <br>FROM Commande INNER JOIN (Produit INNER JOIN DetailCommande ON
+                  Produit.RefProd = DetailCommande.RefProd) ON Commande.NoCom =
+                  DetailCommande.NoCom;
+                </p>
+                <img class="QBE3_m2" src="assets/image/QBE_requete3.png" alt="QBE de la 3e requête" height="150" width="500">
+                <table class="reponse3_m2">
+          <tr>
+            <th>MoyenneDePrixUnitCli</th>
+            <th>MaxDePrixUnitCli</th>
+            <th>MinDePrixUnitCli</th>
+          </tr>
+          <tr>
+            <td>24,68 &#x20AC;</td>
+            <td>263,50 &#x20AC;</td>
+            <td>1,00 &#x20AC;</td>
+          </tr>
+        </table>
+              </div>
+            </div>
+        </details>
+
+        <details>
+          <summary><h2 class="summary_m2">Requête n°4</h2></summary>
+          <div class="requete4_m2">
+            <p class="ei4_m2"><strong>Énoncé n°4:</strong> <br><br> Ainsi pour notre dernière tâche, nous voulons savoir
+              quel est le chiffre d'affaires totales généré avec nos produits, si on les vend en intégralité,
+              dont certains disposent une remise. <br><br>
+              <strong>Interprétation :</strong> <br><br>  De cette façon, l'entreprise Kdou aurait généré
+              un chiffre d'affaires de 1 541 632,28 €, si nos stocks auraient été vendus. <br><br><br>
+              <strong>Légende:</strong> <br><br> <span class="sql_m2">SQL</span><br>  <span class="qbe_m2">QBE</span><br>  <span class="reponse_m2">Résultat de la requête</span><br> </span>
+            </p>
+            <div class="container4_m2">
+              <p class="SQL4_m2">SELECT Sum([PrixUnitCli]*[Qtecom]-([PrixUnitCli]*[QteCom]*[Remise])) AS Expr1
+                <br>FROM Commande INNER JOIN (Produit INNER JOIN DetailCommande ON
+                Produit.RefProd = DetailCommande.RefProd) ON Commande.NoCom =
+                DetailCommande.NoCom;
+              </p>
+              <img class="QBE4_m2" src="assets/image/QBE_requete4.png" alt="QBE de la 4e requête" height="150" width="450">
+              <table class="reponse4_m2">
+              <tr>
+                <th>Expr 1</th>
+              </tr>
+              <tr>
+                <td>1 541 632,28 &#x20AC;</td>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <footer>
+      <div class="bloc_reseau" >
+        <p>Venez nous suivre</p>
+        <ul>
+          <a href="mission3.html">Youtube</a>
+          <a href="mission3.html">Instagram</a>
+          <a href="mission3.html">Facebook</a>
+          <a href="mission3.html">X</a>
+        </ul>
+      </div>
+      <hr>
+      <div class="droits_conditions">
+        <p>&copy; KDOU (France)</p>
+        <p>Page réalisé par Aswin et Dany</p>
+        <p>Mentions légales</p>
+        <p>Condition d'utilisation</p>
+        <p>Paramètre de confidentialité</p>
+        <p>Protection de données</p>
+      </div>
+    </footer>
+  </body>
+</html>

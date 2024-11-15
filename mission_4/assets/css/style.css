@@ -152,22 +152,22 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 /**************************Début de la Mission 1 ************************************/
 
 /****Contexte****/
-.mission1 .texte h1{
-    font-family : "Agency FB"; /*Modification de la police*/
+.mission1 .texte h1{ /*Modification du style de police, de la taille et un soulignement pour le titre*/
+    font-family : "Agency FB";
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
 }
 
-.mission1 .texte .contexte{
+.mission1 .texte .contexte{ /*Modification de la police, la taille et le positionnement*/
     justify-content: center;
     text-align: center;
     font-size: 1.2em;
     font-family : "sans-serif";
 }
 
-/**** Requêtes ****/
-.requete1, .requete2, .requete3 {
+/*Modification pour le positionnement des blocs*/
+.requete1, .requete2, .requete3 { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,12 +207,14 @@ details[open] > summary::before {
     transform: rotate(90deg);
 }
 
-/****Perspective d'amélioration et conclusion****/
+/*Modification de la taille de la police et positionnement du texte*/
 .amelioration {
     display: flex;
     text-align: center;
     font-size: 1.3em;
 }
+
+/*Modification de la taille de la police et positionnement du texte*/
 .conclusion {
     display: flex;
     text-align: center;
@@ -220,7 +222,7 @@ details[open] > summary::before {
     font-size: 1.5em;
 }
 
-/**/
+/*Adaptation pour le téléphone*/
 @media screen and (max-width: 768px) {
     header img {
         width: 100px;

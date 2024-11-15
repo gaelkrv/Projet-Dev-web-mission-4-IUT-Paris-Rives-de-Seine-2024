@@ -153,7 +153,7 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 
 /****Contexte****/
 .mission1 .texte h1{
-    font-family : "Agency FB";
+    font-family : "Agency FB"; /*Modification de la police*/
     font-size: 50px;
     text-align: center;
     text-decoration: underline;

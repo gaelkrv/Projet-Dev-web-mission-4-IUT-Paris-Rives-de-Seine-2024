@@ -74,7 +74,7 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 /*************************FIN de Haut de page****************************/
 
 
-/*********************************** DEBUT de la Page d'accueil ***********************************/
+/*********************************** DEBUT de la Page d'accueil ***********************************
 
 /*************************DEBUT de Présentation du groupe******************/
 /* Modification du texte "Présentation du groupe" qui fonctionne comme titre (centré,souligné et plus grand) */
@@ -142,9 +142,14 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 }
 /*************************FIN de Introduction du travail*******************/
 
-/*********************************** FIN de la Page d'accueil ***********************************/
+/***********************************DEBUT de la Page d'accueil ***********************************/
 
-/*********************************** Début de la Mission 1 ***********************************/
+
+/*************************DEBUT de la page "Travail sur KDou"************************/
+
+/*************************FIN de la page "Travail sur KDou"**************************/
+
+/**************************Début de la Mission 1 ************************************/
 
 /****Contexte****/
 .mission1 .texte h1{
@@ -360,6 +365,10 @@ details[open] > summary::before {
     font-family : Consolas;
     font-size : 20px;
     margin : 50px 0 0 25px;
+}
+
+.bilan_rapport u{ /* Couleur de texte rouge pour tous les textes soulignés dans le rapport de bilan */
+    color : red;
 }
 
 /* Modification du texte du paragraphe 1, padding-right pour laisser suffisament d'espace à droite pour l'image html_css et contour bleu */

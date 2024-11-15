@@ -140,9 +140,60 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 .introduction_travail p {
     margin : 50px 0 300px 25px; /* On recentre le texte après l'inclusion de l'image à sa droite */
 }
+
+@media screen and (max-width: 768px) {
+
+    /* Présentation du groupe - Titre */
+    .presentation_groupe h1 {
+        font-size: 30px; /* Réduit la taille du titre */
+        margin: 50px 0; /* Moins de marge sur mobile */
+    }
+
+    /* Présentation du groupe - Paragraphe */
+    .presentation_groupe p {
+        font-size: 20px; /* Réduit la taille du texte */
+        margin: 20px 15px; /* Moins de marge sur mobile */
+    }
+
+    /* Présentation du groupe - Liste ordonnée */
+    .presentation_groupe ol {
+        font-size: 18px; /* Réduit la taille de la liste */
+        margin: 10px 0 0 15px; /* Moins de marge sur mobile */
+    }
+
+    /* Introduction du travail - Titre */
+    .introduction_travail h1 {
+        font-size: 35px; /* Réduit la taille du titre */
+        margin: 50px 0 0 0; /* Supprime la marge à gauche */
+    }
+
+    /* Introduction du travail - Paragraphe */
+    .introduction_travail p {
+        font-size: 20px; /* Réduit la taille du texte */
+        margin: 20px 0 0 20px; /* Moins de marge sur mobile */
+    }
+
+    /* Introduction du travail - Image */
+    .introduction_travail img {
+        width: 250px; /* Réduit la taille de l'image */
+        height: auto; /* Maintient les proportions de l'image */
+        top: 50px; /* Ajuste la position de l'image */
+        right: 30px; /* Réduit la marge à droite */
+    }
+
+    /* Introduction du travail - Alignement du texte */
+    .introduction_travail {
+        padding-right: 0; /* Supprime le padding à droite pour laisser plus d'espace */
+    }
+
+    /* Introduction du travail - Texte */
+    .introduction_travail p {
+        margin: 20px 0 200px 20px; /* Réduit la marge du texte */
+    }
+}
 /*************************FIN de Introduction du travail*******************/
 
-/***********************************DEBUT de la Page d'accueil ***********************************/
+/***********************************FIN de la Page d'accueil ***********************************/
 
 
 /*************************DEBUT de la page "Travail sur KDou"************************/
@@ -221,6 +272,53 @@ details[open] > summary::before {
     justify-content: center;
     font-size: 1.5em;
 }
+
+@media screen and (max-width: 768px) {
+    /**************************Début de la Mission 1 pour mobile ************************************/
+
+    /* Réduction de la taille de la police pour les titres */
+    .mission1 .texte h1 {
+        font-size: 30px; /* Réduction de la taille du titre */
+    }
+
+    /* Ajustement de la taille de la police et de l'alignement pour le texte de contexte */
+    .mission1 .texte .contexte {
+        font-size: 1em; /* Réduction de la taille de la police */
+        padding: 10px;
+    }
+
+    /* Adaptation des blocs .requete1, .requete2, .requete3 */
+    .requete1, .requete2, .requete3 {
+        margin-right: 0; /* Enlever l'espace sur la droite */
+        padding: 10px; /* Réduction du padding */
+        gap: 20px; /* Réduction de l'espacement entre les éléments */
+    }
+
+    .requete1 .ei1, .requete2 .ei2, .requete3 .ei3 {
+        width: 100%; /* Les éléments prennent toute la largeur disponible */
+        font-size: 1em; /* Réduction de la taille de la police */
+    }
+
+    /* Ajustement du contenu dans details */
+    details > summary {
+        font-size: 1.2em; /* Légère réduction de la taille de la police */
+        padding-bottom: 10px; /* Réduction du padding */
+    }
+
+    /* Modification de la taille de la police et des espacements pour amelioration et conclusion */
+    .amelioration {
+        font-size: 1.1em; /* Réduction de la taille de la police */
+        padding: 10px;
+    }
+
+    .conclusion {
+        font-size: 1.3em; /* Réduction de la taille de la police */
+        padding: 10px;
+    }
+
+    /**************************Fin de la Mission 1 pour mobile ************************************/
+}
+
 
 
 /**************************Fin de la Mission 1 ************************************/
@@ -332,6 +430,80 @@ details[open] > summary::before {
 /* Bordure intérieure du tableau réponse */
 .reponse1_m2 tr th,.reponse1_m2 tr td, .reponse2_m2 tr th, .reponse2_m2 tr td, .reponse3_m2 tr th, .reponse3_m2 tr td, .reponse4_m2 tr th, .reponse4_m2 tr td{
     border: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+    /* Modification de la taille des titres */
+    .mission2 .contenu_m2 h1 {
+        font-size: 30px; /* Plus petit sur mobile */
+        text-align: center;
+    }
+
+    /* Réduction de la taille de police et centrage du texte dans le bloc contexte */
+    .mission2 .contenu_m2 .contexte_m2 {
+        font-size: 1em; /* Réduire la taille du texte */
+        text-align: center;
+    }
+
+    /* Modifier les grilles pour un affichage en une seule colonne */
+    .requete1_m2, .requete2_m2, .requete3_m2, .requete4_m2 {
+        grid-template-columns: 1fr; /* Une seule colonne */
+        margin-left: 0; /* Réduire les marges */
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    /* Ajuster les containers en flex pour qu'ils s'étalent sur toute la largeur disponible */
+    .container1_m2, .container2_m2, .container3_m2, .container4_m2 {
+        margin-right: 0; /* Enlever la marge droite */
+        padding: 15px; /* Réduire la taille des paddings */
+        gap: 15px; /* Réduire l'espacement entre les éléments */
+    }
+
+    /* Adapter la largeur des blocs contenant le texte */
+    .ei1_m2, .ei2_m2, .ei3_m2, .ei4_m2 {
+        width: 100%; /* Occuper toute la largeur disponible */
+        font-size: 1em; /* Réduire la taille de la police */
+    }
+
+    /* Modifier la taille des blocs SQL pour qu'ils s'adaptent mieux */
+    .SQL1_m2, .SQL2_m2, .SQL3_m2, .SQL4_m2 {
+        font-size: 1em; /* Réduire la taille de la police */
+        width: 100%; /* Occuper toute la largeur */
+    }
+
+    /* Modifier la largeur des blocs QBE sur mobile */
+    .QBE1_m2, .QBE2_m2, .QBE3_m2, .QBE4_m2 {
+        width: 100%; /* Largeur de 100% pour occuper toute la ligne */
+        height: auto; /* Ajuster la hauteur en fonction du contenu */
+    }
+
+    /* Modifier les tables réponses pour un affichage en largeur pleine */
+    .reponse1_m2, .reponse2_m2, .reponse3_m2, .reponse4_m2 {
+        width: 100%; /* Réduire la largeur à 100% pour les petits écrans */
+        height: auto; /* Adapter la hauteur */
+    }
+
+    /* Modifier les bordures dans les tableaux pour qu'elles s'ajustent */
+    .reponse1_m2 tr th, .reponse1_m2 tr td,
+    .reponse2_m2 tr th, .reponse2_m2 tr td,
+    .reponse3_m2 tr th, .reponse3_m2 tr td,
+    .reponse4_m2 tr th, .reponse4_m2 tr td {
+        font-size: 0.9em; /* Réduire la taille de la police pour les petits écrans */
+        padding: 8px; /* Moins de padding pour les petits écrans */
+    }
+
+    /* Adapter les boutons dans le détail (summary) */
+    details > summary {
+        font-size: 1em; /* Réduire la taille de la police pour la summary */
+        padding-bottom: 15px; /* Réduire l'espace sous le bouton */
+    }
+
+    /* Ajuster les icônes avant dans le summary */
+    details > summary::before {
+        font-size: 1.5em; /* Augmenter légèrement la taille des icônes */
+        margin-right: 10px; /* Ajouter un peu plus d'espace après l'icône */
+    }
 }
 
 /**************************FIN de la Mission 2 ************************************/
@@ -481,6 +653,90 @@ details[open] > summary::before {
     width : 70%; /* On élargit puis on centre le tableau */
     margin : 100px 0 300px 300px;
 }
+
+@media screen and (max-width: 768px) {
+    /* Titre "Bilan de rapport" */
+    .bilan_rapport h1 {
+        font-size: 40px; /* Taille du titre plus petite pour les petits écrans */
+        margin: 50px 0;  /* Réduit l'espace autour du titre */
+    }
+
+    /* Paragraphe texte */
+    .bilan_rapport p {
+        font-size: 16px; /* Réduit la taille de la police */
+        margin: 30px 15px 0 15px; /* Ajuste les marges pour éviter un espace trop grand */
+    }
+
+    /* Paragraphe 1, ajustement de la taille et des marges */
+    .bilan_rapport .paragraphe_1 {
+        padding-right: 30px; /* Réduit l'espace à droite pour les petits écrans */
+        margin: 30px 15px; /* Réduit les marges */
+        border: 3px solid blue; /* Réduit la taille de la bordure */
+    }
+
+    /* Paragraphe 2, ajustement de la taille et des marges */
+    .bilan_rapport .paragraphe_2 {
+        padding-left: 30px; /* Réduit l'espace à gauche */
+        margin: 50px 15px; /* Réduit les marges */
+        border: 3px solid green; /* Réduit la taille de la bordure */
+    }
+
+    /* Paragraphe 3 */
+    .bilan_rapport .paragraphe_3 {
+        margin: 0 30px 80px 30px; /* Ajuste les marges */
+        border: 3px solid orange; /* Réduit la taille de la bordure */
+    }
+
+    /* Paragraphe 4 */
+    .bilan_rapport .paragraphe_4 {
+        margin: 0 30px 30px 30px; /* Ajuste les marges */
+        border: 3px solid red; /* Réduit la taille de la bordure */
+    }
+
+    /* Ajustement des images */
+    .bilan_rapport .couple_image {
+        position: relative; /* Utilisation de relative pour mieux gérer l'espacement */
+        width: 100%; /* Utilise toute la largeur disponible */
+        height: auto;
+        top: 0;
+        right: 0;
+    }
+
+    .bilan_rapport .couple_image img:first-child {
+        width: 100%; /* L'image prend toute la largeur de son conteneur */
+        height: auto;
+        position: relative; /* Positionnement adapté */
+        top: 0;
+    }
+
+    /* Ajustement des titres des tableaux */
+    .bilan_rapport caption {
+        font-size: 30px; /* Réduit la taille du titre */
+        margin: 50px 0;  /* Réduit l'espace autour du titre */
+    }
+
+    /* Ajustement des cellules du tableau */
+    .bilan_rapport th {
+        font-size: 24px; /* Réduit la taille des titres des colonnes */
+    }
+
+    .bilan_rapport td {
+        font-size: 18px; /* Réduit la taille du texte dans les cellules */
+    }
+
+    /* Tableau des améliorations possibles */
+    .bilan_rapport table {
+        width: 90%; /* Réduit la largeur du tableau pour le rendre plus adapté */
+        margin: 50px 10%; /* Centrer et réduire l'espace autour du tableau */
+    }
+
+    /* Ajustement des bordures des cellules du tableau */
+    .tableau_amelioration td, .tableau_amelioration th {
+        padding: 15px; /* Réduit le padding des cellules */
+        font-size: 18px; /* Réduit la taille du texte dans le tableau */
+    }
+}
+
 /*************************FIN de Bilan de rapport**************************/
 
 /*************************DEBUT de Pied de page**************************/

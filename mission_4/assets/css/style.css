@@ -74,7 +74,7 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 /*************************FIN de Haut de page****************************/
 
 
-/*********************************** DEBUT de la Page d'accueil ***********************************
+/*********************************** DEBUT de la Page d'accueil ***********************************/
 
 /*************************DEBUT de Présentation du groupe******************/
 /* Modification du texte "Présentation du groupe" qui fonctionne comme titre (centré,souligné et plus grand) */
@@ -137,14 +137,9 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 }
 /*************************FIN de Introduction du travail*******************/
 
-/***********************************DEBUT de la Page d'accueil ***********************************/
+/*********************************** FIN de la Page d'accueil ***********************************/
 
-
-/*************************DEBUT de la page "Travail sur KDou"************************/
-
-/*************************FIN de la page "Travail sur KDou"**************************/
-
-/**************************Début de la Mission 1 ************************************/
+/*********************************** Début de la Mission 1 ***********************************/
 
 /****Contexte****/
 .mission1 .texte h1{

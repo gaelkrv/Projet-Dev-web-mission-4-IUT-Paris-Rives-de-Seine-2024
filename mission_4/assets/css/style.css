@@ -597,12 +597,12 @@ details[open] > summary::before {
 }
 
 /* Délimitation du tableau */
-th,td{
+.tableau_amelioration td , .tableau_amelioration th{
     border : 2px solid black; /* Créer la bordure du tableau en noir */
     background-color: darkseagreen;
     border-radius : 10px; /* "Arrondi" les coins du tableau */
 }
-th,td{
+.tableau_amelioration td , .tableau_amelioration th{
     padding: 30px; /* On place le texte du nom des colonnes et le texte du contenu du tableau au centre de ce dernier */
 }
 .bilan_rapport table{

@@ -219,6 +219,73 @@ details[open] > summary::before {
     justify-content: center;
     font-size: 1.5em;
 }
+
+/**/
+@media screen and (max-width: 768px) {
+    header img {
+        width: 100px;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .mission1 .texte h1 {
+        font-size: 36px;
+    }
+
+    .mission1 .texte .contexte {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .requete1, .requete2, .requete3 {
+        margin: 0;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .requete1 .ei1, .requete2 .ei2, .requete3 .ei3 {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    details > summary {
+        padding-bottom: 10px;
+    }
+
+    .amelioration, .conclusion {
+        font-size: 1em;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    footer .bloc_reseau {
+        text-align: center;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 5px;
+    }
+
+    .droits_conditions p {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
 /**************************Fin de la Mission 1 ************************************/
 
 

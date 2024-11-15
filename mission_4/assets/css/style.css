@@ -509,6 +509,27 @@ details[open] > summary::before {
 /**************************FIN de la Mission 2 ************************************/
 
 /***************DEBUT de Mission 3***************/
+/***************DEBUT de Mission 3***************/
+
+details > summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+details > summary::before {
+    content: '▶';
+    margin-right: 8px; /* Espace entre la flèche et le texte */
+    transition: transform 0.3s ease;
+}
+
+/* Lorsque le <details> est ouvert, la flèche pointe vers le bas */
+details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
 .mission3 h1 { /* Style de base de la page web pour le titre*/
     font-family : "Agency FB";
     text-decoration: underline;
@@ -517,13 +538,76 @@ details[open] > summary::before {
     margin : 100px 0 0 0;
 }
 
+/*Style intro mission 3*/
 .mission3 .mission3_intro{
-	position: relative;
+    position: relative;
     padding-right: 500px;
     margin : 50px 0 0 25px;
     border : 5px solid blue;
-	
+
 }
+
+.mission3 .paragraphe1{
+    position: relative;
+    padding-right: 500px;
+    margin : 50px 0 0 25px;
+    border : 5px solid blue;
+
+}
+
+.cyrilrequete_m3, .aswinrequete_m3, .danyrequete_m3, .gaelrequete_m3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+
+.regroup1_m3 .tableaucyril_m3, .regroup2_m3 .tableauaswin_m3, .regroup3_m3 .tableaudany_m3, .regroup4_m3 .tableaugael_m3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    padding: 20px;
+    gap: 30px;
+}
+
+
+
+.enonce1_m3, .enonce2_m3, .enonce3_m3, .enonce_m4{ /*Contient l'énoncé, interprétation et le code SQL*/
+    border: 2px solid red;
+    margin: 5px;
+    padding: 10px;
+    height: auto;
+    width: 500px;
+}
+
+
+.tableaucyril_m3, .tableauaswin_m3, .tableaudany_m3, .tableaugael_m3 {
+    border: 2px solid green;
+    margin: 5px;
+    padding: 30px;
+    width: 30%;
+    height: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Bordure intérieure du tableau réponse */
+.tableaucyril_m3 tr td, .tableauaswin_m3 tr th, .tableaudany_m3 tr td, .tableaugael_m3 tr th{
+    border: 2px solid black;
+}
+
+
+.paragraphe2 {
+    position: relative;
+    padding-right: 500px;
+    margin : 50px 0 0 25px;
+    border : 5px solid blue;
+}
+
+
+/***************FIN de Mission 3***************/
 
 /***************FIN de Mission 3***************/
 

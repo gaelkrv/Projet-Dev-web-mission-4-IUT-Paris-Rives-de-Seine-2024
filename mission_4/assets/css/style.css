@@ -222,71 +222,6 @@ details[open] > summary::before {
     font-size: 1.5em;
 }
 
-/*Adaptation pour le téléphone*/
-@media screen and (max-width: 768px) {
-    header img {
-        width: 100px;
-        height: auto;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 5px 0;
-        text-align: center;
-    }
-
-    .mission1 .texte h1 {
-        font-size: 36px;
-    }
-
-    .mission1 .texte .contexte {
-        font-size: 1em;
-        padding: 10px;
-    }
-
-    .requete1, .requete2, .requete3 {
-        margin: 0;
-        padding: 15px;
-        gap: 20px;
-    }
-
-    .requete1 .ei1, .requete2 .ei2, .requete3 .ei3 {
-        width: 100%;
-        font-size: 1em;
-        padding: 10px;
-    }
-
-    details > summary {
-        padding-bottom: 10px;
-    }
-
-    .amelioration, .conclusion {
-        font-size: 1em;
-        padding: 10px;
-        flex-direction: column;
-    }
-
-    footer .bloc_reseau {
-        text-align: center;
-    }
-
-    footer ul {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        gap: 5px;
-    }
-
-    .droits_conditions p {
-        text-align: center;
-        margin: 5px 0;
-    }
-}
 
 /**************************Fin de la Mission 1 ************************************/
 
@@ -397,69 +332,6 @@ details[open] > summary::before {
 /* Bordure intérieure du tableau réponse */
 .reponse1_m2 tr th,.reponse1_m2 tr td, .reponse2_m2 tr th, .reponse2_m2 tr td, .reponse3_m2 tr th, .reponse3_m2 tr td, .reponse4_m2 tr th, .reponse4_m2 tr td{
     border: 1px solid black;
-}
-
-/* Adaptation sur téléphone */
-
-@media screen and (max-width: 768px) {
-	
-    nav {
-        grid-template-columns: 1fr;
-        padding: 5px;
-        margin: 0;
-    }
-
-    nav a {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-
-    .contenu_menu {
-        min-width: 120px;
-    }
-
-    /* Ajustement des détails et des titres */
-    .mission2 .contenu_m2 h1 {
-        font-size: 32px;
-    }
-
-    .requete1_m2, .requete2_m2, .requete3_m2, .requete4_m2 {
-        grid-template-columns: 1fr;
-        margin-left: 10px;
-        gap: 5px;
-    }
-
-    .container1_m2, .container2_m2, .container3_m2, .container4_m2 {
-        margin-right: 10px;
-        padding: 10px;
-        gap: 15px;
-    }
-
-    .ei1_m2, .ei2_m2, .ei3_m2, .ei4_m2 {
-        width: 100%;
-        font-size: 1em;
-    }
-
-    .QBE1_m2, .QBE2_m2, .QBE3_m2, .QBE4_m2 {
-        width: 100%;
-        height: auto;
-        padding: 5px;
-    }
-
-    .reponse1_m2, .reponse2_m2, .reponse3_m2, .reponse4_m2 {
-        height: auto;
-    }
-
-    footer .bloc_reseau {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .droits_conditions {
-        flex-direction: column;
-        margin-left: 0;
-        gap: 10px;
-    }
 }
 
 /**************************FIN de la Mission 2 ************************************/
@@ -660,3 +532,208 @@ hr {
     margin-left: 50px;
 }
 /*********************FIN de Pied de page***************************/
+
+
+/****** Adaptation de la page WEB en mobile ********/
+
+@media screen and (max-width: 768px) {
+
+    /************************* DEBUT de Haut de page ****************************/
+
+    /* Adaptation de la barre de navigation */
+    nav {
+        grid-template-columns: 1fr 1fr;
+        padding: 5px;
+        text-align: center;
+    }
+
+    /* Réduire la taille du texte dans les liens de navigation */
+    nav a {
+        padding: 10px; 
+        font-size: 16px; 
+    }
+
+    .menu {
+        display: block; 
+        width: 100%;
+    }
+
+    /* Modification du titre du groupe pour un affichage plus compact */
+    .presentation_groupe h1 {
+        font-size: 35px;
+        margin: 40px 0;
+    }
+
+    /* Réduire la taille de la police pour le texte de présentation */
+    .presentation_groupe p {
+        font-size: 18px;
+        margin: 20px 10px;
+    }
+
+    .presentation_groupe ol {
+        font-size: 16px;
+    }
+
+    /************************* FIN de Haut de page ****************************/
+
+    /************************* DEBUT de Introduction du travail ****************************/
+
+    /* Adaptation du titre dans la section introduction */
+    .introduction_travail h1 {
+        font-size: 35px; 
+        margin: 50px 0 0 20px;
+    }
+
+    /* Modifier la taille de la police dans le texte de l'introduction */
+    .introduction_travail p {
+        font-size: 18px;
+        margin: 20px 10px;
+    }
+
+    /* Ajuster l'image de l'introduction pour un meilleur affichage mobile */
+    .introduction_travail img {
+        width: 250px;
+        height: auto;
+        top: 50px;
+        right: 10px;
+    }
+
+    /************************* FIN de Introduction du travail ****************************/
+
+    /************************* DEBUT de Mission 1 ****************************/
+
+    .mission1 .texte h1 {
+        font-size: 35px;
+        margin: 40px 0;
+    }
+
+    /* Centrer le texte de la section "Contexte" */
+    .mission1 .texte .contexte {
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    /* Adapter les requêtes en colonnes sur mobile */
+    .requete1, .requete2, .requete3 {
+        margin-right: 0;
+        flex-direction: row;
+        gap: 15px;
+    }
+    /* Assurer que chaque élément prend toute la largeur */
+    .requete1 .ei1, .requete2 .ei2, .requete3 .ei3 {
+        width: 100%; 
+    }
+
+    /************************* FIN de Mission 1 ****************************/
+
+    /************************* DEBUT de Mission 2 ****************************/
+
+    /* Réduire la taille du titre dans Mission 2 */
+    .mission2 .contenu_m2 h1 {
+        font-size: 35px;
+        margin: 40px 0;
+    }
+
+    /* Ajuster le texte du contexte pour qu'il soit lisible */
+    .mission2 .contenu_m2 .contexte_m2 {
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    /* Adapter la grille des requêtes pour mobile */
+    .requete1_m2, .requete2_m2, .requete3_m2, .requete4_m2 {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+
+    /* Ajuster les blocs de texte */
+    .container1_m2, .container2_m2, .container3_m2, .container4_m2 {
+        margin-right: 0;
+    }
+    /* Occuper toute la largeur disponible */
+    .ei1_m2, .ei2_m2, .ei3_m2, .ei4_m2 {
+        width: 100%; 
+    }
+
+    /************************* FIN de Mission 2 ****************************/
+
+    /************************* DEBUT de Mission 3 ****************************/
+
+    /* Adapter la taille du titre dans Mission 3 */
+    .mission3 h1 {
+        font-size: 45px; 
+        margin: 50px 0;
+    }
+
+    /* Ajuster le texte d'introduction dans Mission 3 */
+    .mission3 .mission3_intro {
+        padding-right: 20px;
+    }
+
+    /************************* FIN de Mission 3 ****************************/
+
+    /************************* DEBUT de Bilan de rapport ****************************/
+
+    /* Adapter la taille du titre dans Bilan de rapport */
+    .bilan_rapport h1 {
+        font-size: 45px; 
+        margin: 50px 0;
+    }
+
+    /* Adapter la taille du texte dans les paragraphes */
+    .bilan_rapport p {
+        font-size: 18px;
+        margin: 20px 10px;
+    }
+
+    /* Adapter les paragraphes dans Bilan de rapport */
+    .bilan_rapport .paragraphe_1,
+    .bilan_rapport .paragraphe_2,
+    .bilan_rapport .paragraphe_3,
+    .bilan_rapport .paragraphe_4 {
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* Ajuster la taille des images dans Bilan de rapport */
+    .bilan_rapport .couple_image img:first-child {
+        width: 250px;
+        height: auto;
+        position: relative;
+        top: 180px;
+        right: 50px;
+    }
+
+    /* Adapter la taille du tableau dans Bilan de rapport */
+    .bilan_rapport table {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    /************************* FIN de Bilan de rapport ****************************/
+
+    /************************* DEBUT de Pied de page ****************************/
+
+    /* Centrer le texte dans le footer */
+    footer {
+        padding: 10px;
+    }
+
+    /* Ajuster l'espacement des éléments du footer */
+    .bloc_reseau p {
+        font-size: 1.2em; 
+    }
+
+    .bloc_reseau ul a {
+        font-size: 1em; 
+    }
+
+    /* Ajuster l'espacement dans le bloc des droits et conditions */
+    .droits_conditions p {
+        font-size: 1em;
+        margin-left: 20px;
+    }
+
+    /************************* FIN de Pied de page ****************************/
+}
+

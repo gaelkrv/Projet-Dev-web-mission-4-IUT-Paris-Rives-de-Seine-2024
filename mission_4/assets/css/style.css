@@ -1,18 +1,11 @@
 /*************************DEBUT de Haut de page****************************/
-html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+
+body { 
+    background-color : #FAF0E6; /* Couleur de fond de toutes les pages en beige */
 }
 
-/* Remplissage de l'espace */
-body, main {
-    flex: 1;
-}
 header{
-    text-align: center;
+    text-align: center; /* Recentre le logo de l'entreprise */
 }
 /* Placement de la barre de navigation qui fonctionne comme une grille */
 nav {

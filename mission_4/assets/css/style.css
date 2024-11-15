@@ -330,6 +330,69 @@ details[open] > summary::before {
     border: 1px solid black;
 }
 
+/* Adaptation sur téléphone */
+
+@media screen and (max-width: 768px) {
+	
+    nav {
+        grid-template-columns: 1fr;
+        padding: 5px;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .contenu_menu {
+        min-width: 120px;
+    }
+
+    /* Ajustement des détails et des titres */
+    .mission2 .contenu_m2 h1 {
+        font-size: 32px;
+    }
+
+    .requete1_m2, .requete2_m2, .requete3_m2, .requete4_m2 {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        gap: 5px;
+    }
+
+    .container1_m2, .container2_m2, .container3_m2, .container4_m2 {
+        margin-right: 10px;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .ei1_m2, .ei2_m2, .ei3_m2, .ei4_m2 {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .QBE1_m2, .QBE2_m2, .QBE3_m2, .QBE4_m2 {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .reponse1_m2, .reponse2_m2, .reponse3_m2, .reponse4_m2 {
+        height: auto;
+    }
+
+    footer .bloc_reseau {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .droits_conditions {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+    }
+}
+
 /**************************FIN de la Mission 2 ************************************/
 
 /***************DEBUT de Mission 3***************/

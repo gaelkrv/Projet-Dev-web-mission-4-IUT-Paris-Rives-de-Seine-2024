@@ -1,11 +1,24 @@
 /*************************DEBUT de Haut de page****************************/
 
-body { 
-    background-color : #FAF0E6; /* Couleur de fond de toutes les pages en beige */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Remplissage de l'espace */
+body, main {
+    flex: 1;
+}
+
+body {
+    background-color : #FAF0E6; /* Couleur de fond beige pour toutes les pages */
 }
 
 header{
-    text-align: center; /* Recentre le logo de l'entreprise */
+    text-align: center;
 }
 /* Placement de la barre de navigation qui fonctionne comme une grille */
 nav {
@@ -60,6 +73,7 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
 }
 /*************************FIN de Haut de page****************************/
 
+/* Page d'accueil */
 /*************************DEBUT de Présentation du groupe******************/
 /* Modification du texte "Présentation du groupe" qui fonctionne comme titre (centré,souligné et plus grand) */
 .presentation_groupe h1{

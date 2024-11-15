@@ -119,6 +119,11 @@ nav a:hover, .contenu_menu a:hover { /* Pour les onglets de la barre de navigati
     margin : 50px 0 0px 25px;
 }
 
+/* Modification en rouge de tous les textes soulignés */
+.introduction_travail u{
+    color : red;
+}
+
 .introduction_travail {
     position: relative; /* Position relative puis padding-right pour permettre d'inclure une image à sa droite */
     padding-right: 500px;

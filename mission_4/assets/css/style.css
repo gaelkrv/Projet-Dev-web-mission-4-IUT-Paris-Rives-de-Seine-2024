@@ -244,14 +244,14 @@ details[open] > summary::before {
     transform: rotate(90deg);
 }
 
-/****Titre****/
+/****Application du style du titre***/
 .mission2 .contenu_m2 h1{
     font-family : "Agency FB";
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
 }
-/*Contexte*/
+/*Centrage et modification du texte du bloc*/
 .mission2 .contenu_m2 .contexte_m2{
     justify-content: center;
     text-align: center;
@@ -259,7 +259,7 @@ details[open] > summary::before {
     font-family : "sans-serif";
 }
 
-/**** Légende ****/
+/**** Application des couleurs de la Légende ****/
 .sql_m2{
     color: darkblue;
 }

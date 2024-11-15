@@ -224,6 +224,7 @@ details[open] > summary::before {
 
 
 /**************************Début de la Mission 2 ************************************/
+
 /*Application de l'élément detail et son enfant summary*/
 details > summary {
     display: flex;
@@ -251,7 +252,7 @@ details[open] > summary::before {
     text-align: center;
     text-decoration: underline;
 }
-/*Centrage et modification du texte du bloc*/
+/*Centrage et modification du texte du bloc contexte*/
 .mission2 .contenu_m2 .contexte_m2{
     justify-content: center;
     text-align: center;
@@ -270,7 +271,7 @@ details[open] > summary::before {
     color: green;
 }
 
-/**** Requêtes ****/
+/**** Répartition du bloc requête_m2 en grille ****/
 .requete1_m2, .requete2_m2, .requete3_m2, .requete4_m2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -278,7 +279,8 @@ details[open] > summary::before {
     gap: 10px;
     padding-bottom: 30px;
 }
-/**/
+
+/* Disposition du bloc container_m2 sur la grille */
 .container1_m2, .container2_m2, .container2_m2, .container3_m2, .container4_m2 {
     display: flex;
     flex-direction: column;
@@ -287,7 +289,7 @@ details[open] > summary::before {
     gap: 30px;
 }
 
-/* Enoncé/Interprétation */
+/* Modification du texte du paragraphe ei_m2 */
 .ei1_m2, .ei2_m2, .ei3_m2, .ei4_m2{
     border: 2px solid black;
     font-size: 1.2em;
@@ -296,7 +298,7 @@ details[open] > summary::before {
     width: 80%;
 }
 
-/*SQL*/
+/* Modification du texte du bloc SQL_m2 */
 .SQL1_m2, .SQL2_m2, .SQL3_m2, .SQL4_m2{
     font-size: 1.2em;
     border: 2px solid darkblue;
@@ -304,7 +306,7 @@ details[open] > summary::before {
     padding: 10px;
 }
 
-/*QBE*/
+/* Modification du bloc QBE_m2 */
 .QBE1_m2, .QBE2_m2, .QBE3_m2, .QBE4_m2{
     border: 2px solid red;
     margin: 5px;
@@ -312,7 +314,7 @@ details[open] > summary::before {
     height: 100px;
     width: 500px;
 }
-/*Tableau réponse*/
+/* Modification du tableau réponse*/
 .reponse1_m2, .reponse2_m2, .reponse3_m2, .reponse4_m2 {
     border: 2px solid green;
     margin: 5px;
